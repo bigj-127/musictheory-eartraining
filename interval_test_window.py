@@ -1,6 +1,6 @@
 from PyQt5.QtWidgets import QApplication, QMainWindow
 
-from interval_test_window_ui import Ui_IntervalTestWindow
+from ui_templates.interval_test_window_ui import Ui_IntervalTestWindow
 from pygame_midi import setup_pygame_midi, close_pygame_midi, play_note
 from constants import STRINGS, NOTES, EASY_INTERVALS, MEDIUM_INTERVALS, HARD_INTERVALS, INTERVALS_DICT
 

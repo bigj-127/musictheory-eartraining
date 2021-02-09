@@ -11,7 +11,7 @@
 
 from PyQt5.QtWidgets import QApplication, QMainWindow
 
-from home_window_ui import Ui_HomeWindow
+from ui_templates.home_window_ui import Ui_HomeWindow
 
 from interval_test_window import IntervalTestWindow
 from chord_id_test_window import ChordIDTestWindow

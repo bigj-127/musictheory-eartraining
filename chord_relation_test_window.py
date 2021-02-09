@@ -1,6 +1,6 @@
 from PyQt5.QtWidgets import QApplication, QMainWindow
 
-from chord_relation_test_window_ui import Ui_ChordRelationTestWindow
+from ui_templates.chord_relation_test_window_ui import Ui_ChordRelationTestWindow
 from pygame_midi import setup_pygame_midi, close_pygame_midi, play_chord
 from constants import STRINGS, BASIC_NOTES, NOTES, INTERVALS_DICT, CHORDS_DICT
 

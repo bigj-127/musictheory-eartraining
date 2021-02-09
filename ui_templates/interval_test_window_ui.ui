@@ -1,0 +1,724 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>IntervalTestWindow</class>
+ <widget class="QMainWindow" name="IntervalTestWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1324</width>
+    <height>493</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Interval Test</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>-30</y>
+      <width>821</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>24</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Select the interval you just heard</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="output_label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>90</y>
+      <width>471</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>140</y>
+      <width>721</width>
+      <height>291</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QPushButton" name="replay_button">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Replay Interval</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="skip_button">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Skip this Interval</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="3" column="5">
+        <widget class="QPushButton" name="P8_button">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="accessibleName">
+          <string>OCTAVE</string>
+         </property>
+         <property name="text">
+          <string>Octave</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">interval_buttonGroup</string>
+         </attribute>
+        </widget>
+       </item>
+       <item row="2" column="5">
+        <widget class="QPushButton" name="m6_button">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="accessibleName">
+          <string>MINOR_6TH</string>
+         </property>
+         <property name="text">
+          <string>Minor 6th</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">interval_buttonGroup</string>
+         </attribute>
+        </widget>
+       </item>
+       <item row="1" column="5">
+        <widget class="QPushButton" name="M3_button">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="accessibleName">
+          <string>MAJOR_3RD</string>
+         </property>
+         <property name="text">
+          <string>Major 3rd</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">interval_buttonGroup</string>
+         </attribute>
+        </widget>
+       </item>
+       <item row="3" column="2">
+        <widget class="QPushButton" name="M6_button">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="accessibleName">
+          <string>MAJOR_6TH</string>
+         </property>
+         <property name="text">
+          <string>Major 6th</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">interval_buttonGroup</string>
+         </attribute>
+        </widget>
+       </item>
+       <item row="2" column="3">
+        <widget class="QPushButton" name="TT_button">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="accessibleName">
+          <string>TRITONE</string>
+         </property>
+         <property name="text">
+          <string>Tritone</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">interval_buttonGroup</string>
+         </attribute>
+        </widget>
+       </item>
+       <item row="2" column="4">
+        <widget class="QPushButton" name="P5_button">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="accessibleName">
+          <string>PERFECT_5TH</string>
+         </property>
+         <property name="text">
+          <string>Perfect 5th</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">interval_buttonGroup</string>
+         </attribute>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="QPushButton" name="P4_button">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="accessibleName">
+          <string>PERFECT_4TH</string>
+         </property>
+         <property name="text">
+          <string>Perfect 4th</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">interval_buttonGroup</string>
+         </attribute>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QPushButton" name="m2_button">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="accessibleName">
+          <string>MINOR_2ND</string>
+         </property>
+         <property name="text">
+          <string>Minor 2nd</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">interval_buttonGroup</string>
+         </attribute>
+        </widget>
+       </item>
+       <item row="3" column="3">
+        <widget class="QPushButton" name="m7_button">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="accessibleName">
+          <string>MINOR_7TH</string>
+         </property>
+         <property name="text">
+          <string>Minor 7th</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">interval_buttonGroup</string>
+         </attribute>
+        </widget>
+       </item>
+       <item row="1" column="4">
+        <widget class="QPushButton" name="m3_button">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="accessibleName">
+          <string>MINOR_3RD</string>
+         </property>
+         <property name="text">
+          <string>Minor 3rd</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">interval_buttonGroup</string>
+         </attribute>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QPushButton" name="M2_button">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="accessibleName">
+          <string>MAJOR_2ND</string>
+         </property>
+         <property name="text">
+          <string>Major 2nd</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">interval_buttonGroup</string>
+         </attribute>
+        </widget>
+       </item>
+       <item row="3" column="4">
+        <widget class="QPushButton" name="M7_button">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="accessibleName">
+          <string>MAJOR_7TH</string>
+         </property>
+         <property name="text">
+          <string>Major 7th</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">interval_buttonGroup</string>
+         </attribute>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="score_label">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>80</y>
+      <width>211</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="close_button">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>440</y>
+      <width>211</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Close</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="select_all">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>70</y>
+      <width>311</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Select all intervals</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>0</y>
+      <width>591</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Select the intervals you would like to test</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>110</y>
+      <width>431</width>
+      <height>321</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QCheckBox" name="select_all1">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Select all below:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="accessibleName">
+          <string>MINOR_2ND</string>
+         </property>
+         <property name="text">
+          <string>Minor 2nd</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup1</string>
+         </attribute>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_2">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="accessibleName">
+          <string>MAJOR_2ND</string>
+         </property>
+         <property name="text">
+          <string>Major 2nd</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup1</string>
+         </attribute>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_3">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="accessibleName">
+          <string>MINOR_3RD</string>
+         </property>
+         <property name="text">
+          <string>Minor 3rd</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup1</string>
+         </attribute>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_4">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="accessibleName">
+          <string>MAJOR_3RD</string>
+         </property>
+         <property name="text">
+          <string>Major 3rd</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup1</string>
+         </attribute>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_5">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="accessibleName">
+          <string>PERFECT_4TH</string>
+         </property>
+         <property name="text">
+          <string>Perfect 4th</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup1</string>
+         </attribute>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_6">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="accessibleName">
+          <string>TRITONE</string>
+         </property>
+         <property name="text">
+          <string>Tritone</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup1</string>
+         </attribute>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QCheckBox" name="select_all2">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Select all below:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_7">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="accessibleName">
+          <string>PERFECT_5TH</string>
+         </property>
+         <property name="text">
+          <string>Perfect 5th</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup2</string>
+         </attribute>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_8">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="accessibleName">
+          <string>MINOR_6TH</string>
+         </property>
+         <property name="text">
+          <string>Minor 6th</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup2</string>
+         </attribute>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_9">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="accessibleName">
+          <string>MAJOR_6TH</string>
+         </property>
+         <property name="text">
+          <string>Major 6th</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup2</string>
+         </attribute>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_10">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="accessibleName">
+          <string>MINOR_7TH</string>
+         </property>
+         <property name="text">
+          <string>Minor 7th</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup2</string>
+         </attribute>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_11">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="accessibleName">
+          <string>MAJOR_7TH</string>
+         </property>
+         <property name="text">
+          <string>Major 7th</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup2</string>
+         </attribute>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox_12">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="accessibleName">
+          <string>OCTAVE</string>
+         </property>
+         <property name="text">
+          <string>Octave</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup2</string>
+         </attribute>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1324</width>
+     <height>18</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="interval_buttonGroup"/>
+  <buttongroup name="buttonGroup1">
+   <property name="exclusive">
+    <bool>false</bool>
+   </property>
+  </buttongroup>
+  <buttongroup name="buttonGroup2">
+   <property name="exclusive">
+    <bool>false</bool>
+   </property>
+  </buttongroup>
+ </buttongroups>
+</ui>

@@ -1,6 +1,6 @@
 from PyQt5.QtWidgets import QApplication, QMainWindow
 
-from chord_degree_test_window_ui import Ui_ChordDegreeTestWindow
+from ui_templates.chord_degree_test_window_ui import Ui_ChordDegreeTestWindow
 from constants import MAJOR_SCALES_DICT
 
 from random import choice

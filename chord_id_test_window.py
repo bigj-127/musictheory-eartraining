@@ -1,6 +1,6 @@
 from PyQt5.QtWidgets import QApplication, QMainWindow
 
-from chord_id_test_window_ui import Ui_ChordIDTestWindow
+from ui_templates.chord_id_test_window_ui import Ui_ChordIDTestWindow
 from pygame_midi import setup_pygame_midi, close_pygame_midi, play_chord, play_arpeggio
 from constants import STRINGS, CHORDS_DICT, BASIC_NOTES
 
